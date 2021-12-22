@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="contenedor">
+        <ul class="menu">Menú
+            <li class="lista"><a href="introduccion.html">Introducción</a></li>
+            <li class="lista"><a href="sillas.html">Sillas</a></li>
+            <li class="lista"><a href="mesas.html">Mesas</a></li>
+            <li class="lista"><a href="cintas.html">Cintas</a></li>
+            <li class="lista"><a href="index.html">Index</a></li>
+        </ul>
+    </div>
+
+    <form action="PHP" method="post">
+        Nombre completo<input type="text" name="nombre"><br><br><br><br>
+        Correo electrónico <input type="email" name="email" placeholder="usuario@ejemplo.com"><br><br><br><br>
+        Evento <select name="evento" id="">
+            <option value="">Soltero/a</option>
+            <option value="casado">Casado/a</option>
+            <option value="viudo">Viudo/a</option>
+        </select> <br><br><br><br>
+        ¿Desea recibir nuestro Newsletter? <input type="checkbox" name="quiero" value="1"><br><br><br><br>
+        <textarea name="comment" id="" cols="30" rows="10"></textarea><br>
+        <button>Enviar formulario</button> <button>Limpiar formulario</button>
+    </form>
+    <footer>
+        <p>Contacto</p>
+        <p>Copyright</p>
+        <p>Nombre y logo</p>
+    </footer>
+</body>
+</html>

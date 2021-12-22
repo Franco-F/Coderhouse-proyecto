@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+td, th{
+    border: 1px solid black;
+}
+
+.menu{
+    display: block;
+    font-weight: bold;
+}
+
+.lista{
+    display: inline;
+    font-style: italic;
+}
+
+
+.variedad, .plano{
+    height: 500px;
+    width: auto;
+}
+
+footer p{
+    display: inline;
+    font-weight: bold;
+}
+
+footer{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.contenedor{
+    background-color: blanchedalmond;
+}
+
+.texto{
+    background-color: aliceblue;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (min-width: 320px) {
+    .grid{
+        margin: 10px auto 10px auto;
+        width: 320px;
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+        "mesa color1 combo1"
+        "silla color2 combo2"
+        "cinta color3 combo3"
+        "combo color4 combo4";
+    }
+
+    .grid-mesas{
+        margin: 0 auto 0 auto;
+        display: grid;
+        grid-template-areas: 
+        "mesas1 descripcion1"
+        "mesas2 descripcion2";
+    }
+
+    .wrap-texto-iframe{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto{
+        display: flex;
+        width: 320px;
+        flex-grow: 1;
+    }
+
+    .iframe{
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        width: auto;
+    }
+
+    #mesas1{
+        grid-area: mesas1;
+    }
+
+    #mesas2{
+        grid-area: mesas2;
+    }
+
+    #descripcion1{
+        grid-area: descripcion1;
+    }
+
+    #descripcion2{
+        grid-area: descripcion2;
+    }
+
+    section{
+        border: 1px solid black;
+    }
+    
+    section#color1{
+        grid-area: color1;
+        width: 120px;
+        height: 120px;
+    }
+    section#combo1{
+        grid-area: combo1;
+        width: 120px;
+        height: 120px;
+    }
+
+    section#color2{
+        grid-area: color2;
+        width: 120px;
+        height: 120px;
+    }
+    section#combo2{
+        grid-area: combo2;
+        width: 120px;
+        height: 120px;
+    }
+
+    section#color3{
+        grid-area: color3;
+        width: 120px;
+        height: 120px;
+    }
+    section#combo3{
+        grid-area: combo3;
+        width: 120px;
+        height: 120px;
+    }
+
+    section#color4{
+        grid-area: color4;
+        width: 120px;
+        height: 120px;
+    }
+    section#combo4{
+        grid-area: combo4;
+        width: 120px;
+        height: 120px;
+    }
+
+    img#mesa{
+        grid-area: mesa;
+    }
+
+    img#silla{
+        grid-area: silla;
+    }
+
+    img#cinta{
+        grid-area: cinta;
+    }
+
+    img#combo{
+        grid-area: combo;
+    }
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .contenedor{
+        display: grid;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+        "mesa color1 combo1"
+        "silla color2 combo2"
+        "cinta color3 combo3"
+        "combo color4 combo4";
+        border: 1px solid black;
+    }
+
+    .grid-mesas{
+        margin: 0 auto 0 auto;
+        grid-template-areas: 
+        "mesas1 descripcion1"
+        "mesas2 descripcion2";
+    }
+
+    .wrapper{
+        border: 1px solid black;
+    }
+
+
+    .wrap-texto-iframe{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .iframe{
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        width: 918px;
+    }
+
+    .texto{
+        display: flex;
+        width: 918px;
+        flex-grow: 1;
+    }
+    
+    section#color1{
+        grid-area: color1;
+        width: auto;
+        height: auto;
+    }
+    section#combo1{
+        grid-area: combo1;
+        width: auto;
+        height: auto;
+    }
+
+    section#color2{
+        grid-area: color2;
+        width: auto;
+        height: auto;
+    }
+    section#combo2{
+        grid-area: combo2;
+        width: auto;
+        height: auto;
+    }
+
+    section#color3{
+        grid-area: color3;
+        width: auto;
+        height: auto;
+    }
+    section#combo3{
+        grid-area: combo3;
+        width: auto;
+        height: auto;
+    }
+
+    section#color4{
+        grid-area: color4;
+        width: auto;
+        height: auto;
+    }
+    section#combo4{
+        grid-area: combo4;
+        width: auto;
+        height: auto;
+    }
+
+    img#mesa{
+        grid-area: mesa;
+    }
+
+    img#silla{
+        grid-area: silla;
+    }
+
+    img#cinta{
+        grid-area: cinta;
+    }
+
+    img#combo{
+        grid-area: combo;
+    }
+
+    .mesas{
+        height: 300px;
+        width: auto;
+    }
+
+    .imagenes > img{
+        width: 918px;
+        height: auto;
+    }
+}
