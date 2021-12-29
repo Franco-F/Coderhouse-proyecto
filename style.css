@@ -232,6 +232,14 @@ footer{
     }
 }
 
+.card-img-top{
+    width: 330px;
+    height: auto;
+}
+
+.bg-info{
+    text-align: center;
+}
 
 @media screen and (min-width: 1024px) {
     body{
